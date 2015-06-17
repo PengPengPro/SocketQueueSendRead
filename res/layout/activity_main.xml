@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/resule_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        tools:context=".MainActivity" />
+
+    <!--
+    android:text="5A 0A 83 71 00 00 00 00 00 A5"
+    android:text="5A 0A 83 98 00 00 00 00 00 A5"  rest
+            android:text="5a 4a 02 45 08 a5"
+    -->
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/content_edit"
+        android:onClick="onClick"
+        android:text="TestSendBtn" />
+
+    <EditText
+        android:id="@+id/content_edit_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/send"
+        android:ems="30"
+        android:hint="Input content"
+        android:text="5A 0A 83 45 08 00 00 00 00 A5" />
+
+    <Button
+        android:id="@+id/send_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/content_edit_2"
+        android:onClick="onClick"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/send_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/send_2"
+        android:onClick="onClick"
+        android:text="BothSend" />
+
+    <Button
+        android:id="@+id/send_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/send_3"
+        android:onClick="onClick"
+        android:text="下一个页面" />
+
+</RelativeLayout>
